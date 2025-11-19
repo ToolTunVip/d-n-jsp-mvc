@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tin Tức - ToolTunCar</title>
+    <meta name="description" content="Tin tức và đánh giá xe hơi cao cấp mới nhất">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="logo-v2.svg" alt="ToolTunCar Logo">
+                </a>
+                
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Trang chủ</a>
+                    <a href="san-pham.html" class="nav-link">Sản phẩm</a>
+                    <a href="dich-vu.html" class="nav-link">Dịch vụ</a>
+                    <a href="tin-tuc.html" class="nav-link active">Tin tức</a>
+                    <a href="lien-he.html" class="nav-link">Liên hệ</a>
+                </nav>
+
+                <div class="header-actions">
+                    <input type="search" placeholder="Tìm kiếm xe..." class="search-input">
+                    <button class="icon-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </button>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="4" x2="20" y1="12" y2="12"/>
+                            <line x1="4" x2="20" y1="6" y2="6"/>
+                            <line x1="4" x2="20" y1="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-mobile" id="mobileMenu">
+            <a href="index.html" class="nav-link-mobile">Trang chủ</a>
+            <a href="san-pham.html" class="nav-link-mobile">Sản phẩm</a>
+            <a href="dich-vu.html" class="nav-link-mobile">Dịch vụ</a>
+            <a href="tin-tuc.html" class="nav-link-mobile active">Tin tức</a>
+            <a href="lien-he.html" class="nav-link-mobile">Liên hệ</a>
+            <input type="search" placeholder="Tìm kiếm xe..." class="search-input-mobile">
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+                Tin tức <span class="text-primary">ô tô</span>
+            </h1>
+            <p class="page-subtitle">
+                Cập nhật tin tức mới nhất về thế giới xe hơi cao cấp
+            </p>
+        </div>
+    </section>
+
+    <!-- Featured Article -->
+    <section class="featured-article-section">
+        <div class="container">
+            <div class="featured-article">
+                <div class="featured-article-image">
+                    <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=800&q=80" alt="Mercedes S-Class">
+                    <span class="featured-badge">Nổi bật</span>
+                </div>
+                <div class="featured-article-content">
+                    <div class="article-meta">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                            <line x1="16" x2="16" y1="2" y2="6"/>
+                            <line x1="8" x2="8" y1="2" y2="6"/>
+                            <line x1="3" x2="21" y1="10" y2="10"/>
+                        </svg>
+                        <span>15/11/2024</span>
+                        <span>•</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                        <span>Nguyễn Văn A</span>
+                    </div>
+                    <h2 class="featured-article-title">Mercedes S-Class 2024 - Đỉnh cao công nghệ ô tô sang trọng</h2>
+                    <p class="featured-article-excerpt">
+                        Khám phá những cải tiến vượt trội của Mercedes S-Class thế hệ mới với công nghệ hiện đại nhất...
+                    </p>
+                    <a href="#" class="btn btn-primary">
+                        Đọc thêm
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M5 12h14"/>
+                            <path d="m12 5 7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Grid -->
+    <section class="news-section">
+        <div class="container">
+            <div class="news-grid">
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80" alt="BMW 7 Series">
+                        <span class="news-category">So sánh</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                                <line x1="16" x2="16" y1="2" y2="6"/>
+                                <line x1="8" x2="8" y1="2" y2="6"/>
+                                <line x1="3" x2="21" y1="10" y2="10"/>
+                            </svg>
+                            12/11/2024
+                        </div>
+                        <h3 class="news-title">BMW 7 Series vs Mercedes S-Class: Cuộc đua xe sang hạng sang</h3>
+                        <p class="news-excerpt">So sánh chi tiết hai mẫu sedan hạng sang hàng đầu từ BMW và Mercedes-Benz...</p>
+                        <a href="#" class="news-link">
+                            Đọc thêm
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1593941707882-a5bba14938c7?auto=format&fit=crop&w=800&q=80" alt="Electric Car">
+                        <span class="news-category">Xu hướng</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                                <line x1="16" x2="16" y1="2" y2="6"/>
+                                <line x1="8" x2="8" y1="2" y2="6"/>
+                                <line x1="3" x2="21" y1="10" y2="10"/>
+                            </svg>
+                            10/11/2024
+                        </div>
+                        <h3 class="news-title">Top 5 xe điện cao cấp đáng mua nhất năm 2024</h3>
+                        <p class="news-excerpt">Xu hướng xe điện đang thay đổi thị trường ô tô cao cấp. Cùng điểm qua những mẫu xe đáng chú ý...</p>
+                        <a href="#" class="news-link">
+                            Đọc thêm
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=800&q=80" alt="Audi A8">
+                        <span class="news-category">Đánh giá xe</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                                <line x1="16" x2="16" y1="2" y2="6"/>
+                                <line x1="8" x2="8" y1="2" y2="6"/>
+                                <line x1="3" x2="21" y1="10" y2="10"/>
+                            </svg>
+                            08/11/2024
+                        </div>
+                        <h3 class="news-title">Audi A8 2024: Sự kết hợp hoàn hảo giữa công nghệ và sang trọng</h3>
+                        <p class="news-excerpt">Audi A8 thế hệ mới mang đến trải nghiệm lái xe đẳng cấp với nhiều tính năng vượt trội...</p>
+                        <a href="#" class="news-link">
+                            Đọc thêm
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1621007947382-bb3c3994e3fb?auto=format&fit=crop&w=800&q=80" alt="Lexus LS">
+                        <span class="news-category">Lịch sử</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                                <line x1="16" x2="16" y1="2" y2="6"/>
+                                <line x1="8" x2="8" y1="2" y2="6"/>
+                                <line x1="3" x2="21" y1="10" y2="10"/>
+                            </svg>
+                            05/11/2024
+                        </div>
+                        <h3 class="news-title">Lexus LS: Biểu tượng của sự sang trọng Nhật Bản</h3>
+                        <p class="news-excerpt">Tìm hiểu về lịch sử và sự phát triển của dòng xe sedan cao cấp từ Lexus...</p>
+                        <a href="#" class="news-link">
+                            Đọc thêm
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+
+                <article class="news-card">
+                    <div class="news-image">
+                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=800&q=80" alt="Car Maintenance">
+                        <span class="news-category">Hướng dẫn</span>
+                    </div>
+                    <div class="news-content">
+                        <div class="news-date">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <rect width="18" height="18" x="3" y="4" rx="2" ry="2"/>
+                                <line x1="16" x2="16" y1="2" y2="6"/>
+                                <line x1="8" x2="8" y1="2" y2="6"/>
+                                <line x1="3" x2="21" y1="10" y2="10"/>
+                            </svg>
+                            02/11/2024
+                        </div>
+                        <h3 class="news-title">5 mẹo bảo dưỡng xe sang để giữ giá trị xe qua thời gian</h3>
+                        <p class="news-excerpt">Hướng dẫn chi tiết cách bảo dưỡng và chăm sóc xe cao cấp để duy trì giá trị...</p>
+                        <a href="#" class="news-link">
+                            Đọc thêm
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M5 12h14"/>
+                                <path d="m12 5 7 7-7 7"/>
+                            </svg>
+                        </a>
+                    </div>
+                </article>
+            </div>
+
+            <div class="text-center" style="margin-top: 3rem;">
+                <button class="btn btn-outline btn-lg">Xem thêm tin tức</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="logo-v2.svg" alt="ToolTunCar" class="footer-logo">
+                    <p class="footer-description">
+                        Chuyên cung cấp xe hơi cao cấp nhập khẩu chính hãng với dịch vụ tận tâm và chuyên nghiệp
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Liên kết</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="san-pham.html">Sản phẩm</a></li>
+                        <li><a href="dich-vu.html">Dịch vụ</a></li>
+                        <li><a href="tin-tuc.html">Tin tức</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Dịch vụ</h3>
+                    <ul class="footer-links">
+                        <li><a href="dich-vu.html">Mua bán xe</a></li>
+                        <li><a href="dich-vu.html">Bảo dưỡng</a></li>
+                        <li><a href="dich-vu.html">Tư vấn tài chính</a></li>
+                        <li><a href="dich-vu.html">Đăng kiểm</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Liên hệ</h3>
+                    <ul class="footer-links">
+                        <li>123 Đường Nguyễn Huệ, Q1</li>
+                        <li>TP. Hồ Chí Minh</li>
+                        <li>0901 234 567</li>
+                        <li>info@tooltuncar.vn</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 ToolTunCar. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
