@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToolTunCar - Showroom Xe Hơi Cao Cấp</title>
+    <meta name="description" content="Chuyên cung cấp xe hơi cao cấp nhập khẩu chính hãng từ Mercedes, BMW, Audi, Lexus với giá cạnh tranh nhất">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="logo-v2.svg" alt="ToolTunCar Logo">
+                </a>
+                
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link active">Trang chủ</a>
+                    <a href="san-pham.html" class="nav-link">Sản phẩm</a>
+                    <a href="dich-vu.html" class="nav-link">Dịch vụ</a>
+                    <a href="tin-tuc.html" class="nav-link">Tin tức</a>
+                    <a href="lien-he.html" class="nav-link">Liên hệ</a>
+                </nav>
+
+                <div class="header-actions">
+                    <input type="search" placeholder="Tìm kiếm xe..." class="search-input">
+                    <button class="icon-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </button>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="4" x2="20" y1="12" y2="12"/>
+                            <line x1="4" x2="20" y1="6" y2="6"/>
+                            <line x1="4" x2="20" y1="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <nav class="nav-mobile" id="mobileMenu">
+            <a href="index.html" class="nav-link-mobile active">Trang chủ</a>
+            <a href="san-pham.html" class="nav-link-mobile">Sản phẩm</a>
+            <a href="dich-vu.html" class="nav-link-mobile">Dịch vụ</a>
+            <a href="tin-tuc.html" class="nav-link-mobile">Tin tức</a>
+            <a href="lien-he.html" class="nav-link-mobile">Liên hệ</a>
+            <input type="search" placeholder="Tìm kiếm xe..." class="search-input-mobile">
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-image">
+            <img src="hero-car.jpg" alt="Luxury Car">
+        </div>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-badge">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/>
+                    </svg>
+                    <span>Showroom xe hơi cao cấp</span>
+                </div>
+                
+                <h1 class="hero-title">
+                    Đẳng Cấp <span class="gradient-text">Xe Sang</span>
+                </h1>
+                
+                <p class="hero-description">
+                    Khám phá bộ sưu tập xe hơi cao cấp từ những thương hiệu hàng đầu thế giới. 
+                    Mercedes, BMW, Audi, Lexus và nhiều hơn thế nữa.
+                </p>
+                
+                <div class="hero-buttons">
+                    <a href="san-pham.html" class="btn btn-primary">Khám phá ngay</a>
+                    <a href="lien-he.html" class="btn btn-outline">Liên hệ tư vấn</a>
+                </div>
+                
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <div class="stat-number">500+</div>
+                        <div class="stat-label">Xe cao cấp</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Thương hiệu</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">10K+</div>
+                        <div class="stat-label">Khách hàng</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brands Section -->
+    <section class="brands-section">
+        <div class="container">
+            <h2 class="section-title">
+                Thương hiệu <span class="text-primary">đối tác</span>
+            </h2>
+            <div class="brands-grid">
+                <div class="brand-card">
+                    <img src="https://www.carlogos.org/logo/Mercedes-Benz-logo.png" alt="Mercedes">
+                </div>
+                <div class="brand-card">
+                    <img src="https://www.carlogos.org/logo/BMW-logo.png" alt="BMW">
+                </div>
+                <div class="brand-card">
+                    <img src="https://www.carlogos.org/logo/Audi-logo.png" alt="Audi">
+                </div>
+                <div class="brand-card">
+                    <img src="https://www.carlogos.org/logo/Lexus-logo.png" alt="Lexus">
+                </div>
+                <div class="brand-card">
+                    <img src="https://www.carlogos.org/logo/Toyota-logo.png" alt="Toyota">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Cars -->
+    <section class="featured-section">
+        <div class="container">
+            <div class="section-header">
+                <div>
+                    <h2 class="section-title">
+                        Xe nổi bật <span class="text-primary">trong tuần</span>
+                    </h2>
+                    <p class="section-subtitle">
+                        Khám phá những mẫu xe cao cấp được yêu thích nhất
+                    </p>
+                </div>
+                <a href="san-pham.html" class="btn btn-outline btn-desktop">
+                    Xem tất cả
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+            
+            <div class="cars-grid">
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1617531653332-bd46c24f2068?auto=format&fit=crop&w=800&q=80" alt="Mercedes S-Class">
+                    </div>
+                    <div class="car-content">
+                        <div class="car-header">
+                            <h3 class="car-name">Mercedes S-Class</h3>
+                            <span class="car-brand">Mercedes</span>
+                        </div>
+                        <p class="car-price">5.200.000.000 VNĐ</p>
+                        <div class="car-specs">
+                            <span>3.0L V6</span>
+                            <span>•</span>
+                            <span>429 HP</span>
+                            <span>•</span>
+                            <span>9-Speed</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-full">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=800&q=80" alt="BMW 7 Series">
+                    </div>
+                    <div class="car-content">
+                        <div class="car-header">
+                            <h3 class="car-name">BMW 7 Series</h3>
+                            <span class="car-brand">BMW</span>
+                        </div>
+                        <p class="car-price">4.899.000.000 VNĐ</p>
+                        <div class="car-specs">
+                            <span>3.0L I6</span>
+                            <span>•</span>
+                            <span>375 HP</span>
+                            <span>•</span>
+                            <span>8-Speed</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-full">Xem chi tiết</a>
+                    </div>
+                </div>
+
+                <div class="car-card">
+                    <div class="car-image">
+                        <img src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=800&q=80" alt="Audi A8">
+                    </div>
+                    <div class="car-content">
+                        <div class="car-header">
+                            <h3 class="car-name">Audi A8</h3>
+                            <span class="car-brand">Audi</span>
+                        </div>
+                        <p class="car-price">4.799.000.000 VNĐ</p>
+                        <div class="car-specs">
+                            <span>3.0L V6</span>
+                            <span>•</span>
+                            <span>335 HP</span>
+                            <span>•</span>
+                            <span>8-Speed</span>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-full">Xem chi tiết</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center btn-mobile">
+                <a href="san-pham.html" class="btn btn-outline">
+                    Xem tất cả
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M5 12h14"/>
+                        <path d="m12 5 7 7-7 7"/>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2 class="section-title">
+                Sẵn sàng sở hữu xe mơ ước?
+            </h2>
+            <p class="section-subtitle" style="max-width: 42rem; margin: 0 auto 2rem;">
+                Liên hệ ngay với chúng tôi để được tư vấn và trải nghiệm lái thử miễn phí
+            </p>
+            <div class="cta-buttons">
+                <a href="lien-he.html" class="btn btn-primary btn-lg">Liên hệ tư vấn</a>
+                <a href="san-pham.html" class="btn btn-outline btn-lg">Xem bộ sưu tập</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="logo-v2.svg" alt="ToolTunCar" class="footer-logo">
+                    <p class="footer-description">
+                        Chuyên cung cấp xe hơi cao cấp nhập khẩu chính hãng với dịch vụ tận tâm và chuyên nghiệp
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Liên kết</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="san-pham.html">Sản phẩm</a></li>
+                        <li><a href="dich-vu.html">Dịch vụ</a></li>
+                        <li><a href="tin-tuc.html">Tin tức</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Dịch vụ</h3>
+                    <ul class="footer-links">
+                        <li><a href="dich-vu.html">Mua bán xe</a></li>
+                        <li><a href="dich-vu.html">Bảo dưỡng</a></li>
+                        <li><a href="dich-vu.html">Tư vấn tài chính</a></li>
+                        <li><a href="dich-vu.html">Đăng kiểm</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Liên hệ</h3>
+                    <ul class="footer-links">
+                        <li>123 Đường Nguyễn Huệ, Q1</li>
+                        <li>TP. Hồ Chí Minh</li>
+                        <li>0901 234 567</li>
+                        <li>info@tooltuncar.vn</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 ToolTunCar. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

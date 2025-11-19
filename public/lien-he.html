@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liên Hệ - ToolTunCar</title>
+    <meta name="description" content="Liên hệ với ToolTunCar để được tư vấn về xe cao cấp">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">
+                    <img src="logo-v2.svg" alt="ToolTunCar Logo">
+                </a>
+                
+                <nav class="nav-desktop">
+                    <a href="index.html" class="nav-link">Trang chủ</a>
+                    <a href="san-pham.html" class="nav-link">Sản phẩm</a>
+                    <a href="dich-vu.html" class="nav-link">Dịch vụ</a>
+                    <a href="tin-tuc.html" class="nav-link">Tin tức</a>
+                    <a href="lien-he.html" class="nav-link active">Liên hệ</a>
+                </nav>
+
+                <div class="header-actions">
+                    <input type="search" placeholder="Tìm kiếm xe..." class="search-input">
+                    <button class="icon-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/>
+                            <circle cx="12" cy="7" r="4"/>
+                        </svg>
+                    </button>
+                    <button class="mobile-menu-btn" onclick="toggleMobileMenu()">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <line x1="4" x2="20" y1="12" y2="12"/>
+                            <line x1="4" x2="20" y1="6" y2="6"/>
+                            <line x1="4" x2="20" y1="18" y2="18"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="nav-mobile" id="mobileMenu">
+            <a href="index.html" class="nav-link-mobile">Trang chủ</a>
+            <a href="san-pham.html" class="nav-link-mobile">Sản phẩm</a>
+            <a href="dich-vu.html" class="nav-link-mobile">Dịch vụ</a>
+            <a href="tin-tuc.html" class="nav-link-mobile">Tin tức</a>
+            <a href="lien-he.html" class="nav-link-mobile active">Liên hệ</a>
+            <input type="search" placeholder="Tìm kiếm xe..." class="search-input-mobile">
+        </nav>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">
+                Liên hệ <span class="text-primary">với chúng tôi</span>
+            </h1>
+            <p class="page-subtitle">
+                Hãy để lại thông tin, chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <div class="contact-form-card">
+                        <h2 class="form-title">Gửi tin nhắn</h2>
+                        <form class="contact-form" onsubmit="handleSubmit(event)">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Họ và tên *</label>
+                                    <input type="text" id="name" placeholder="Nguyễn Văn A" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Số điện thoại *</label>
+                                    <input type="tel" id="phone" placeholder="0901 234 567" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" placeholder="email@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="subject">Tiêu đề</label>
+                                <input type="text" id="subject" placeholder="Tư vấn mua xe">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Nội dung *</label>
+                                <textarea id="message" rows="6" placeholder="Nhập nội dung tin nhắn của bạn..." required></textarea>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary btn-lg btn-full">Gửi tin nhắn</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info-wrapper">
+                    <h2 class="info-title">Thông tin liên hệ</h2>
+                    <div class="contact-info-grid">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="info-label">Địa chỉ</h3>
+                                <p class="info-value">123 Đường Nguyễn Huệ, Quận 1, TP. Hồ Chí Minh</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="info-label">Điện thoại</h3>
+                                <p class="info-value">0901 234 567</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"/>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="info-label">Email</h3>
+                                <p class="info-value">info@tooltuncar.vn</p>
+                            </div>
+                        </div>
+
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <polyline points="12 6 12 12 16 14"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h3 class="info-label">Giờ làm việc</h3>
+                                <p class="info-value">Thứ 2 - Chủ nhật: 8:00 - 20:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Map Placeholder -->
+                    <div class="map-placeholder">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                            <circle cx="12" cy="10" r="3"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container text-center">
+            <h2 class="section-title">
+                Đến trực tiếp showroom
+            </h2>
+            <p class="section-subtitle" style="max-width: 42rem; margin: 0 auto 2rem;">
+                Ghé thăm showroom để trải nghiệm trực tiếp và nhận tư vấn từ đội ngũ chuyên gia
+            </p>
+            <a href="#" class="btn btn-primary btn-lg">Xem bản đồ chi tiết</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <img src="logo-v2.svg" alt="ToolTunCar" class="footer-logo">
+                    <p class="footer-description">
+                        Chuyên cung cấp xe hơi cao cấp nhập khẩu chính hãng với dịch vụ tận tâm và chuyên nghiệp
+                    </p>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Liên kết</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Trang chủ</a></li>
+                        <li><a href="san-pham.html">Sản phẩm</a></li>
+                        <li><a href="dich-vu.html">Dịch vụ</a></li>
+                        <li><a href="tin-tuc.html">Tin tức</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Dịch vụ</h3>
+                    <ul class="footer-links">
+                        <li><a href="dich-vu.html">Mua bán xe</a></li>
+                        <li><a href="dich-vu.html">Bảo dưỡng</a></li>
+                        <li><a href="dich-vu.html">Tư vấn tài chính</a></li>
+                        <li><a href="dich-vu.html">Đăng kiểm</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h3 class="footer-title">Liên hệ</h3>
+                    <ul class="footer-links">
+                        <li>123 Đường Nguyễn Huệ, Q1</li>
+                        <li>TP. Hồ Chí Minh</li>
+                        <li>0901 234 567</li>
+                        <li>info@tooltuncar.vn</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2024 ToolTunCar. Tất cả quyền được bảo lưu.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
