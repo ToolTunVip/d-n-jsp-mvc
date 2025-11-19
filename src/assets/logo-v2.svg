@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="320" height="100" viewBox="0 0 320 100" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <defs>
+    <!-- Gradient Vàng Kim -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F9E28D"/>
+      <stop offset="50%" stop-color="#D4AF37"/>
+      <stop offset="100%" stop-color="#B8972A"/>
+    </linearGradient>
+
+    <!-- Bóng đổ tinh tế -->
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="3"/>
+      <feOffset dx="2" dy="2" result="offsetblur"/>
+      <feFlood flood-color="#000" flood-opacity="0.3"/>
+      <feComposite in2="offsetblur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Cánh chim ưng cách điệu -->
+    <path id="wingPath" d="M45 50 Q35 30, 25 40 Q15 50, 25 60 Q35 70, 45 50 M45 50 Q55 30, 65 40 Q75 50, 65 60 Q55 70, 45 50" fill="none"/>
+  </defs>
+
+  <!-- Vòng tròn vàng kim + Cánh chim -->
+  <g transform="translate(50,50)">
+    <circle cx="0" cy="0" r="28" fill="url(#goldGradient)" filter="url(#shadow)"/>
+    <use href="#wingPath" stroke="url(#goldGradient)" stroke-width="3" fill="none"/>
+    <use href="#wingPath" stroke="#fff" stroke-width="1.5" fill="none" opacity="0.6"/>
+  </g>
+
+  <!-- Chữ ToolTun -->
+  <text x="100" y="58" font-family="'Cinzel', serif" font-weight="900" font-size="38" fill="url(#goldGradient)" letter-spacing="1.5" filter="url(#shadow)">
+    ToolTun
+  </text>
+
+  <!-- Hiệu ứng ánh kim trên chữ -->
+  <text x="100" y="58" font-family="'Cinzel', serif" font-weight="900" font-size="38" fill="none" stroke="#fff" stroke-width="0.5" opacity="0.4" letter-spacing="1.5">
+    ToolTun
+  </text>
+
+  <!-- Chữ CAR nhỏ -->
+  <text x="100" y="78" font-family="'Montserrat', sans-serif" font-weight="400" font-size="14" fill="#ccc" letter-spacing="6">
+    CAR
+  </text>
+
+  <!-- Tagline nhỏ -->
+  <text x="100" y="92" font-family="'Montserrat', sans-serif" font-size="9" fill="#888" letter-spacing="1">
+    Ultra Luxury Automobiles
+  </text>
+</svg>
